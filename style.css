@@ -1,4 +1,4 @@
-.
+*
 {
    margin: 0;
    padding: 0;
@@ -36,6 +36,18 @@ body
     height: 100%;
     background-image: var(--img);
     background-size: cover;
+}
+@media (max-width: 600px) {
+    .drag, .board {
+        gap: 3px;
+    }
+    
+    .drag .dragBox, .dropBox {
+        width: 28vw;
+        height: 28vw;
+        max-width: 80px;
+        max-height: 80px;
+    }
 }
 .reset {
     position: absolute;
